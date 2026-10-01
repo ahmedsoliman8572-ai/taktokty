@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎓 مبروك التخرج يا تقتوقتي</title>
+    <meta name="description" content="صفحة احتفال بتخرج تقتوقتي - ألف مبروك يا دكتورة!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Amiri:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="grad-cap-icon">🎓</div>
+            <p class="hero-subtitle animate-fade-up">الف مليون مبروك لصحبتي وقلبي وحبيبتي</p>
+            <h1 class="hero-title animate-fade-up delay-1">تقتوقتي</h1>
+            <div class="hero-divider animate-fade-up delay-2">
+                <span class="divider-star">✦</span>
+            </div>
+            <p class="hero-tagline animate-fade-up delay-3">مبروك التخرج يا أجمل خريجة 🎉</p>
+            <a href="#message" class="hero-btn animate-fade-up delay-4">
+                <span>شوفي المفاجأة</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 5v14M5 12l7 7 7-7" />
+                </svg>
+            </a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MESSAGE SECTION ============ -->
+    <section class="message-section" id="message">
+        <div class="container">
+            <div class="section-badge animate-on-scroll">
+                <span>💌</span> رسالة من قلبي لقلبي التاني
+            </div>
+            <h2 class="section-title animate-on-scroll">مبروك يا تقتوقتي 🎊</h2>
+            <div class="message-card animate-on-scroll">
+                <div class="message-quote">"</div>
+                <p class="message-text">
+                    يا تقتوقتي يا أجمل صاحبة في الدنيا 💛
+                    <br><br>
+                    مبروك عليكي التخرج! فرحتي بيكي فرحة ملهاش زي خالص. كان نفسي اكون معاكي فيوم زي دا بس زي ما بنقول
+                    متعوضة ان شاء الله
+                    كنتي اجمل واحلي اطيب واحن خريجة شافتها عنيا وبتمنالك بجد كل الخير الي في الدنيا دي كلها وربنا يخليكي
+                    ليا ويباركلي فيكي كدا 🌾
+                    <br><br>
+                    أنا فخور بيكي جداً وخليكي عارفه انك عملتي الي عليكي وزياده كمان وانتي فنظري اشطر بنوته في الدنيا
+                    كلها 🤲
+                    <br><br>
+                    ألف مبروك يا تقتوقتي! 🎓✨
+                </p>
+                <div class="message-signature">
+                    <span>— صاحبك اللي فرحان بيكي</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ============ GALLERY SECTION ============ -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-badge animate-on-scroll">
+                <span>📸</span> ذكريات التخرج
+            </div>
+            <h2 class="section-title animate-on-scroll">لحظات لا تُنسى</h2>
+            <p class="section-desc animate-on-scroll">كل صورة فيها ذكرى حلوة وفرحة كبيرة 💛</p>
+
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Photos will be injected by JS -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="final-section" id="final">
+        <div class="container">
+            <div class="final-card animate-on-scroll">
+                <div class="final-emoji">🎓</div>
+                <h2>ألف مبروك يا تقتوقتي!</h2>
+                <p> فخور بيكي فوق ما تتخيلي ربنا يخليكي ليا ويباركلي فيكي يعمري</p>
+                <button class="confetti-btn" id="celebrate-btn">
+                    <span>🎉</span> اضغطي هنا واحتفلي!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <p>صنع بكل حب 💛 لأجمل خريجة</p>
+        <p class="footer-year">تخرج 2026 🎓</p>
+    </footer>
+
+    <!-- ============ LIGHTBOX ============ -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next">&#10095;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+        </div>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Background Music Toggle -->
+    <button class="music-btn" id="music-btn" title="تشغيل/إيقاف الموسيقى">
+        🎵
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
